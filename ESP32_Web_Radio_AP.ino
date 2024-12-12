@@ -89,7 +89,7 @@ void setup () {
   pinMode(rotaryDT, INPUT);
   pinMode(rotaryCLK, INPUT);
 
-  ESP32Encoder::useInternalWeakPullResistors = UP;
+  ESP32Encoder::useInternalWeakPullResistors = puType::up;
   encoder.attachHalfQuad(rotaryDT, rotaryCLK);
   pinMode(rotarySW, INPUT_PULLUP);
 
